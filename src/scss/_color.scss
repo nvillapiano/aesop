@@ -24,6 +24,14 @@ $main-colors: (
 
   .#{$framework-class-prefix}-bg-#{$color} {
     background-color: map-get($main-colors, $color);
+
+    code {
+
+      pre {
+        color: map-get($main-colors, $color);
+        border-color: map-get($main-colors, $color);
+      }
+    }
   }
 
   .#{$framework-class-prefix}-invert-#{$color} {

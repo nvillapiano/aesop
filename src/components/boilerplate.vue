@@ -6,7 +6,7 @@
     <button class="ae-button">Button</button> <button class="ae-button ae-secondary">Secondary</button> <button class="ae-button ae-tertiary">Tertiary</button>
     <br>
     <form>
-      <input type="search" placeholder="Input"><button class="ae-button ae-secondary">Button</button>
+      <input type="text" placeholder="Input"><button class="ae-button ae-secondary">Button</button>
     </form>
     <form action="">
       <textarea name="" id="" cols="30" rows="10" placeholder="Textarea">Message...</textarea>
@@ -29,7 +29,55 @@
       <li>List item 3</li>
       <li>List item 4</li>
     </ul>
+    <code class="ae-code-block">
+      <pre>&lt;script&gt;
+  export default {
+    name: 'Boilerplate',
+    props: {
+      color: String
+    }
+  }
+&lt;/script&gt;</pre>
+    </code>
   </div>
+
+  <table class="ae-table">
+      <thead>
+          <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+              <th>Column 4</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Data 1.1</td>
+              <td>Data 2.1</td>
+              <td>Data 3.1</td>
+              <td>Data 4.1</td>
+          </tr>
+          <tr>
+              <td>Data 1.2</td>
+              <td>Data 2.2</td>
+              <td>Data 3.2</td>
+              <td>Data 4.2</td>
+          </tr>
+          <tr>
+              <td>Data 1.3</td>
+              <td>Data 2.3</td>
+              <td>Data 3.3</td>
+              <td>Data 4.3</td>
+          </tr>
+          <tr>
+              <td>Data 1.4</td>
+              <td>Data 2.4</td>
+              <td>Data 3.4</td>
+              <td>Data 4.4</td>
+          </tr>
+      </tbody>
+  </table>
+
 </template>
 
 <script>

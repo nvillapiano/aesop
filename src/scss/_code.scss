@@ -1,0 +1,13 @@
+// code
+.#{$framework-class-prefix}-code-block,
+code {
+  display: block;
+  background-color: $black;
+  padding: 1rem;
+
+  pre {
+    background-color: $black;
+    margin: 0;
+  }
+}
+

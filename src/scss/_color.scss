@@ -1,0 +1,37 @@
+//global
+$prefix: 'ae';
+
+// color
+$orange: #f36c42;
+$blue: #92b8c3;
+$pink: #e2b39f;
+$green: #8ba354;
+$grey: #5c6f74;
+$tan: #d6af7a;
+$black: #100a00;
+
+$main-colors: (
+  orange: $orange,
+  blue: $blue,
+  pink: $pink,
+  green: $green,
+  grey: $grey,
+  tan: $tan,
+  black: $black
+);
+
+@each $color in map-keys($main-colors) {
+  .#{$framework-class-prefix}-text-#{$color} {
+    color: map-get($main-colors, $color);
+  }
+
+  .#{$framework-class-prefix}-bg-#{$color} {
+    background-color: map-get($main-colors, $color);
+  }
+
+  .#{$framework-class-prefix}-invert-#{$color} {
+    background-color: $black;
+    color: map-get($main-colors, $color);
+    padding: 0.25rem 0.5rem;
+  }
+}

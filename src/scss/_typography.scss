@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+$font-stack: 'DM Sans', Avenir, Helvetica, Arial, sans-serif;
+
+%globalTypeStyle {
+  font-family: $font-stack;
+  font-style: normal;
+  color: $black;
+  margin: 0; // reset
+  line-height: 1.2;
+}
+
+%typeHeading1 {
+  font-size: 64px;
+}
+
+%typeHeading2 {
+  font-size: 48px;
+}
+
+%typeHeading3 {
+  font-size: 32px;
+}
+
+%typeHeading4 {
+  font-size: 24px;
+}
+
+%typeHeading5 {
+  font-size: 18px;
+}
+
+%typeHeading6 {
+  font-size: 14px;
+}
+
+
+body {
+  @extend %globalTypeStyle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@for $i from 1 through 6 {
+
+  .#{$framework-class-prefix}--heading-#{$i},
+  h#{$i} {
+    @extend %globalTypeStyle;
+    @extend %typeHeading#{$i};
+  }
+}

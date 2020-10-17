@@ -1,0 +1,50 @@
+// lists
+
+.#{$framework-class-prefix}-list-ordered,
+.#{$framework-class-prefix}-list-unordered,
+.#{$framework-class-prefix}-list-unstyled,
+ul,
+ol {
+  margin: 0 0 0 1rem;
+  padding: 0 0 0 1rem;
+}
+
+li {
+  @extend %globalTypeStyle;
+  @extend %typeBody;
+  margin: 0 0 1rem;
+}
+
+.#{$framework-class-prefix}-ordered,
+ol {
+  margin-left: 0.75rem;
+  list-style: none;
+  counter-reset: aesop;
+
+  li {
+    counter-increment: aesop;
+
+    &::before {
+      content: counter(aesop);
+      font-weight: $medium;
+      margin-left: -1rem;
+      margin-right: 0.7rem;
+    }
+
+    &:first-of-type {
+
+      &::before {
+        margin-left: -0.95rem;
+        margin-right: 0.9rem;
+      }
+    }
+  }
+}
+
+.#{$framework-class-prefix}-list-unstyled {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}

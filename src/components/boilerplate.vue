@@ -11,7 +11,24 @@
     <form action="">
       <textarea name="" id="" cols="30" rows="10" placeholder="Textarea">Message...</textarea>
     </form>
-
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ol>
+    <ul class="ae-list-unstyled">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
   </div>
 </template>
 

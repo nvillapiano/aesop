@@ -1,0 +1,37 @@
+// inputs
+
+%inputStyle {
+  @extend %globalTypeStyle;
+  @extend %typeBody;
+  background: none;
+  border: 3px solid $black;
+  color: $black;
+  font-weight: $medium;
+  padding: 0.25rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+
+  &::placeholder {
+    color: $black;
+    font-weight: $regular;
+  }
+}
+
+.#{$framework-class-prefix}-input,
+input {
+  @extend %inputStyle;
+
+  & + .#{$framework-class-prefix}-button,
+  & + button {
+    font-size: 16px;
+    height: 35px;
+    margin-left: 0.25rem;
+  }
+}
+
+.#{$framework-class-prefix}-textarea,
+textarea {
+  @extend %inputStyle;
+  min-height: 100px;
+}

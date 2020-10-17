@@ -16,7 +16,9 @@ button {
   font-size: 20px;
   font-weight: $bold;
   padding: 0.5rem 1rem;
-  transition: all $transition;
+  display: inline-flex;
+  align-items: center;
+  transition: color $transition, border-color $transition, background $transition;
   //
   background: none;
   border: 3px solid $black;

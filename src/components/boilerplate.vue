@@ -39,44 +39,44 @@
   }
 &lt;/script&gt;</pre>
     </code>
-  </div>
+    <table style="max-width: 600px;" class="ae-table">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1.1</td>
+                <td>Data 2.1</td>
+                <td>Data 3.1</td>
+                <td>Data 4.1</td>
+            </tr>
+            <tr>
+                <td>Data 1.2</td>
+                <td>Data 2.2</td>
+                <td>Data 3.2</td>
+                <td>Data 4.2</td>
+            </tr>
+            <tr>
+                <td>Data 1.3</td>
+                <td>Data 2.3</td>
+                <td>Data 3.3</td>
+                <td>Data 4.3</td>
+            </tr>
+            <tr>
+                <td>Data 1.4</td>
+                <td>Data 2.4</td>
+                <td>Data 3.4</td>
+                <td>Data 4.4</td>
+            </tr>
+        </tbody>
+    </table>
 
-  <table class="ae-table">
-      <thead>
-          <tr>
-              <th>Column 1</th>
-              <th>Column 2</th>
-              <th>Column 3</th>
-              <th>Column 4</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Data 1.1</td>
-              <td>Data 2.1</td>
-              <td>Data 3.1</td>
-              <td>Data 4.1</td>
-          </tr>
-          <tr>
-              <td>Data 1.2</td>
-              <td>Data 2.2</td>
-              <td>Data 3.2</td>
-              <td>Data 4.2</td>
-          </tr>
-          <tr>
-              <td>Data 1.3</td>
-              <td>Data 2.3</td>
-              <td>Data 3.3</td>
-              <td>Data 4.3</td>
-          </tr>
-          <tr>
-              <td>Data 1.4</td>
-              <td>Data 2.4</td>
-              <td>Data 3.4</td>
-              <td>Data 4.4</td>
-          </tr>
-      </tbody>
-  </table>
+  </div>
 
 </template>
 

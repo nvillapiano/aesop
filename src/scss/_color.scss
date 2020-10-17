@@ -32,6 +32,16 @@ $main-colors: (
         border-color: map-get($main-colors, $color);
       }
     }
+
+    table {
+
+      thead {
+
+        th {
+          color: map-get($main-colors, $color);
+        }
+      }
+    }
   }
 
   .#{$framework-class-prefix}-invert-#{$color} {

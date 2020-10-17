@@ -1,0 +1,16 @@
+// framework prefix
+$framework-class-prefix: 'ae';
+
+// transition param
+$transition: 0.15s;
+
+// box-sizing
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}

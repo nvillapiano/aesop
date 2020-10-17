@@ -1,11 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 $font-stack: 'DM Sans', Avenir, Helvetica, Arial, sans-serif;
+
+$regular: 400;
+$medium: 600;
+$bold: 800;
 
 %globalTypeStyle {
   font-family: $font-stack;
   font-style: normal;
+  font-weight: $regular;
   color: $black;
   margin: 0; // reset
   line-height: 1.2;
@@ -13,26 +18,41 @@ $font-stack: 'DM Sans', Avenir, Helvetica, Arial, sans-serif;
 
 %typeHeading1 {
   font-size: 64px;
+  font-weight: $bold;
+  letter-spacing: -2.5px;
+  margin: 0 0 1rem;
 }
 
 %typeHeading2 {
   font-size: 48px;
+  margin: 0 0 1rem;
 }
 
 %typeHeading3 {
   font-size: 32px;
+  margin: 0 0 1rem;
 }
 
 %typeHeading4 {
   font-size: 24px;
+  margin: 0 0 1rem;
 }
 
 %typeHeading5 {
   font-size: 18px;
+  margin: 0 0 1rem;
 }
 
 %typeHeading6 {
   font-size: 14px;
+  margin: 0 0 1rem;
+}
+
+%typeBody {
+  font-size: 16px;
+  font-weight: $regular;
+  letter-spacing: -0.5px;
+  margin:0 0 1rem;
 }
 
 
@@ -40,6 +60,11 @@ body {
   @extend %globalTypeStyle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  @extend %globalTypeStyle;
+  @extend %typeBody;
 }
 
 @for $i from 1 through 6 {

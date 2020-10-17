@@ -8,9 +8,4 @@
 
 <style lang="scss">
 @import "./scss/index.scss";
-
-html, body {
-  color: $black;
-  background: $blue;
-}
 </style>

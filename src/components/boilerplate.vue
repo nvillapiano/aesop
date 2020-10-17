@@ -1,8 +1,8 @@
 <template>
   <div class="boilerplate" :class="`ae-bg-${color}`">
-    <h1>Hello world!</h1>
-    <h4 :class="`ae-invert-${color}`">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-    <p style="max-width: 500px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tenetur tempora similique. Officiis fugiat ea dolorum veritatis iure aliquam, reprehenderit magnam autem, excepturi dolor necessitatibus aperiam nesciunt quae corrupti doloribus?</p>
+    <h1>Aēsop CSS</h1>
+    <h4 :class="`ae-invert`">A minimal CSS framework based on the skin care brand <a href="http://www.aesop.com">Aēsop</a>.</h4>
+    <p style="max-width: 500px;">Example text with <a href="#">Link style</a>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tenetur tempora similique. Officiis fugiat ea dolorum veritatis iure aliquam, reprehenderit magnam autem, excepturi dolor necessitatibus aperiam nesciunt quae corrupti doloribus?</p>
     <button class="ae-button">Button</button> <button class="ae-button ae-secondary">Secondary</button> <button class="ae-button ae-tertiary">Tertiary</button>
     <br>
     <form>

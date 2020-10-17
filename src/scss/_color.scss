@@ -25,6 +25,54 @@ $main-colors: (
   .#{$framework-class-prefix}-bg-#{$color} {
     background-color: map-get($main-colors, $color);
 
+    .#{$framework-class-prefix}-invert {
+      color: map-get($main-colors, $color);
+      background-color: $black;
+      padding: 0.25rem 0.5rem;
+
+      a {
+
+        &::before {
+          background-color: map-get($main-colors, $color);
+        }
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    a {
+
+      &:hover {
+        color: map-get($main-colors, $color);
+      }
+    }
+
+    .#{$framework-class-prefix}-button,
+    button {
+
+      &:hover {
+        color: map-get($main-colors, $color);
+      }
+
+      &.#{$framework-class-prefix}-secondary {
+        color: map-get($main-colors, $color);
+
+        &:hover {
+          background-color: map-get($main-colors, $color);
+          color: $black;
+        }
+      }
+
+      &.#{$framework-class-prefix}-tertiary {
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
     code {
 
       pre {
@@ -42,11 +90,5 @@ $main-colors: (
         }
       }
     }
-  }
-
-  .#{$framework-class-prefix}-invert-#{$color} {
-    background-color: $black;
-    color: map-get($main-colors, $color);
-    padding: 0.25rem 0.5rem;
   }
 }

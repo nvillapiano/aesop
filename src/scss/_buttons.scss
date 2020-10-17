@@ -41,35 +41,3 @@ button {
     }
   }
 }
-
-@each $color in map-keys($main-colors) {
-
-  .#{$framework-class-prefix}-bg-#{$color} {
-    background-color: map-get($main-colors, $color);
-
-    .#{$framework-class-prefix}-button,
-    button {
-
-      &:hover {
-        color: map-get($main-colors, $color);
-      }
-
-      &.#{$framework-class-prefix}-secondary {
-        color: map-get($main-colors, $color);
-
-        &:hover {
-          background-color: map-get($main-colors, $color);
-          color: $black;
-        }
-      }
-
-      &.#{$framework-class-prefix}-tertiary {
-
-        &:hover {
-          color: $black;
-        }
-      }
-    }
-  }
-
-}

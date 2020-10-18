@@ -3,10 +3,10 @@
     <h1>Aēsop CSS</h1>
     <h4 :class="`ae-invert`">A minimal CSS framework inspired by the skin care brand <a href="http://www.aesop.com">Aēsop</a>.</h4>
     <p style="max-width: 500px;">Example text with <a href="#">Link style</a>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tenetur tempora similique. Officiis fugiat ea dolorum veritatis iure aliquam, reprehenderit magnam autem, excepturi dolor necessitatibus aperiam nesciunt quae corrupti doloribus?</p>
-    <button class="ae-button">Button</button> <button class="ae-button ae-secondary">Secondary</button> <button class="ae-button ae-tertiary">Tertiary</button>
+    <button class="ae-button">Button</button> <button class="ae-button ae-secondary">Secondary</button>
     <br>
     <form>
-      <input type="text" placeholder="Input"><button class="ae-button ae-secondary">Button</button>
+      <input type="text" placeholder="Input"><button class="ae-button">Button</button>
     </form>
     <form action="">
       <textarea name="" id="" cols="30" rows="10" placeholder="Textarea">Message...</textarea>
@@ -39,6 +39,7 @@
   }
 &lt;/script&gt;</pre>
     </code>
+    <span class="ae-code-inline ae-display-inline-block ae-mar-b-1">ae-code-inline</span>
     <table style="max-width: 600px;" class="ae-table">
         <thead>
             <tr>

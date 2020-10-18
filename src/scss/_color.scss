@@ -30,28 +30,22 @@ $main-colors: (
     a,
     a:visited {
 
-      &:hover {
+      &:hover:not(.ae-button) {
         color: map-get($main-colors, $color);
       }
     }
 
     .#{$framework-class-prefix}-button,
     button {
+      color: map-get($main-colors, $color);
 
       &:hover {
-        color: map-get($main-colors, $color);
+        color: $black;
+        background-color: map-get($main-colors, $color);
       }
 
       &.#{$framework-class-prefix}-secondary {
-        color: map-get($main-colors, $color);
-
-        &:hover {
-          background-color: map-get($main-colors, $color);
-          color: $black;
-        }
-      }
-
-      &.#{$framework-class-prefix}-tertiary {
+        color: $black;
 
         &:hover {
           color: $black;
@@ -88,9 +82,13 @@ $main-colors: (
           background-color: map-get($main-colors, $color);
         }
 
-        &:hover {
+        &:hover:not(.ae-button) {
           color: $black;
         }
+      }
+
+      .#{$framework-class-prefix}-code-inline {
+        border-color: map-get($main-colors, $color);
       }
     }
   }

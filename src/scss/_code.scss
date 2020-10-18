@@ -14,3 +14,9 @@ code {
   }
 }
 
+.#{$framework-class-prefix}-code-inline {
+  font-family: $font-stack-mono;
+  padding: 0 0.25rem;
+  border: 1px solid $black;
+  font-size: 14px;
+}

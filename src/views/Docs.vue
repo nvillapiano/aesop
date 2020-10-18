@@ -8,7 +8,7 @@
           The Aēsop official website uses the font <a href="https://www.swisstypefaces.com/fonts/suisse/">Suisse</a>.
           Aēsop CSS uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
           The six heading classes are provided along with a general body font.
-          Also included is the utility class <a href="#">ae-invert</a>, a class that adds a black background and pseudo-knockout text.
+          Also included is the utility class <span class="ae-code-inline">ae-invert</span>, a class that adds a black background and pseudo-knockout text.
         '
         color="orange"
         example='
@@ -101,7 +101,7 @@
       />
       <Doc
         title="Color"
-        description="The colors in Aēsop are based on the colors of the various packages, tubes, jars, etc. used by the Aēsop brand."
+        description="The colors in Aēsop are based on the colors of the various packages, tubes, jars, etc. used by the Aēsop brand. These colors were grabbed via eyedropper from images of the packages themselves, capturing the tone as accurately as possible. Colors are meant to be used in large blocks, applied to backgrounds only, using the invert class for needed contrast."
         color="green"
         example='
 <!-- Background classes -->
@@ -117,6 +117,28 @@
   <div class="ae-bg-white"></div>
 </div>'
 
+      />
+      <Doc
+        title="Buttons"
+        description="Buttons in Aēsop CSS are meant to be simple and minimalistic, with only two variations: Standard and Secondary. There are no size options tied to buttons, but buttons tied to inputs will shrink to match the size of the input."
+        color="tan"
+        example='
+<!-- Button styles -->
+<div class="button-styles">
+  <button>Standard</button>
+  <button class="ae-secondary">Secondary</button>
+</div>
+
+<!-- Classes can be used to apply button styles to non-button elements -->
+<div class="button-application">
+  <a href="#" class="ae-button">Standard</a>
+  <a href="#" class="ae-button ae-secondary">Secondary</a>
+</div>
+
+<!-- Classes can be used to apply button styles to non-button elements -->
+<div class="button-with-input">
+  <input type="text" placeholder="Input"><button class="ae-button">Button</button>
+</div>'
       />
     </main>
 
@@ -177,6 +199,11 @@ export default {
         margin-left: 0;
       }
     }
+  }
+
+  .button-with-input {
+    display: flex;
+    align-items: center;
   }
 
 </style>

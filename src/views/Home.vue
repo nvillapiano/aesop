@@ -1,16 +1,18 @@
 <template>
   <div class="home">
-    <Boilerplate color="orange"/>
-    <Boilerplate color="blue"/>
-    <Boilerplate color="pink"/>
-    <Boilerplate color="green"/>
-    <Boilerplate color="grey"/>
-    <Boilerplate color="tan"/>
+    <main class="main-content">
+      <Boilerplate color="orange"/>
+      <Boilerplate color="blue"/>
+      <Boilerplate color="pink"/>
+      <Boilerplate color="green"/>
+      <Boilerplate color="grey"/>
+      <Boilerplate color="tan"/>
+    </main>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import Boilerplate from '@/components/boilerplate.vue'
 
 export default {
@@ -23,8 +25,12 @@ export default {
 
 <style lang="scss">
 
-  .card {
-    padding: 2rem;
+  .home {
+    display: flex;
+
+    .main-content {
+      width: 100%;
+    }
   }
 
 </style>

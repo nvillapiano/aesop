@@ -12,7 +12,7 @@ $bold: 800;
 %globalTypeStyle {
   font-family: $font-stack;
   font-style: normal;
-  font-weight: $regular;
+  font-weight: $bold;
   color: $black;
   margin: 0; // reset
   line-height: 1.2;
@@ -20,7 +20,6 @@ $bold: 800;
 
 %typeHeading1 {
   font-size: 64px;
-  font-weight: $bold;
   letter-spacing: -2.5px;
   margin: 0 0 1rem;
 }
@@ -71,7 +70,7 @@ p {
 
 @for $i from 1 through 6 {
 
-  .#{$framework-class-prefix}--heading-#{$i},
+  .#{$framework-class-prefix}-heading-#{$i},
   h#{$i} {
     @extend %globalTypeStyle;
     @extend %typeHeading#{$i};
@@ -87,7 +86,9 @@ a:visited {
   z-index: 1;
   transition: all $transition, color 0.2s;
 
-  // text-decoration: none;
+  &.#{$framework-class-prefix}-link-unstyled {
+    text-decoration: none;
+  }
 
   &::before {
     content: "";
@@ -109,4 +110,36 @@ a:visited {
     }
   }
 
+}
+
+.#{$framework-class-prefix}-bg-black {
+
+  a,
+  a:visited {
+    color: $white;
+
+    &::before {
+      background: $white;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.#{$framework-class-prefix}-bg-white {
+
+  a,
+  a:visited {
+    color: $black;
+
+    &::before {
+      background: $black;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
 }

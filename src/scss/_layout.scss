@@ -1,0 +1,121 @@
+// layout
+
+// spacing
+@for $interval from 0 to 11 {
+  .#{$framework-class-prefix}-mar-#{$interval} {
+    margin: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-t-#{$interval} {
+    margin-top: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-r-#{$interval} {
+    margin-right: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-b-#{$interval} {
+    margin-bottom: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-l-#{$interval} {
+    margin-left: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-t-b-#{$interval} {
+    margin-top: $interval * 1rem !important;
+    margin-bottom: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-mar-l-r-#{$interval} {
+    margin-left: $interval * 1rem !important;
+    margin-right: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-#{$interval} {
+    padding: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-t-#{$interval} {
+    padding-top: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-r-#{$interval} {
+    padding-right: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-b-#{$interval} {
+    padding-bottom: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-l-#{$interval} {
+    padding-left: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-t-b-#{$interval} {
+    padding-top: $interval * 1rem !important;
+    padding-bottom: $interval * 1rem !important;
+  }
+
+  .#{$framework-class-prefix}-pad-l-r-#{$interval} {
+    padding-left: $interval * 1rem !important;
+    padding-right: $interval * 1rem !important;
+  }
+}
+
+.#{$framework-class-prefix}-mar-l-auto {
+  margin-left: auto !important;
+}
+
+.#{$framework-class-prefix}-mar-r-auto {
+  margin-right: auto !important;
+}
+
+.#{$framework-class-prefix}-mar-l-r-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+// display classes
+
+$display-types: (
+  block: block,
+  none: none,
+  inline: inline,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex,
+  initial: initial,
+);
+
+@each $display in map-keys($display-types) {
+  .#{$framework-class-prefix}-display-#{$display} {
+    display: map-get($display-types, $display);
+  }
+}
+
+
+// hr
+
+.#{$framework-class-prefix}-hr,
+hr {
+  display: block;
+  margin: 2rem 0;
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: $black;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: 200vw;
+    height: 100%;
+    background: $black;
+  }
+}

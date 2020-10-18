@@ -6,6 +6,7 @@ $green: #8ba354;
 $grey: #5c6f74;
 $tan: #d6af7a;
 $black: #100a00;
+$white: #e7eade;
 
 $main-colors: (
   orange: $orange,
@@ -14,7 +15,8 @@ $main-colors: (
   green: $green,
   grey: $grey,
   tan: $tan,
-  black: $black
+  black: $black,
+  white: $white
 );
 
 @each $color in map-keys($main-colors) {
@@ -25,24 +27,8 @@ $main-colors: (
   .#{$framework-class-prefix}-bg-#{$color} {
     background-color: map-get($main-colors, $color);
 
-    .#{$framework-class-prefix}-invert {
-      color: map-get($main-colors, $color);
-      background-color: $black;
-      padding: 0.25rem 0.5rem;
-
-      a {
-
-        &::before {
-          background-color: map-get($main-colors, $color);
-        }
-
-        &:hover {
-          color: $black;
-        }
-      }
-    }
-
-    a {
+    a,
+    a:visited {
 
       &:hover {
         color: map-get($main-colors, $color);
@@ -87,6 +73,23 @@ $main-colors: (
 
         th {
           color: map-get($main-colors, $color);
+        }
+      }
+    }
+
+    .#{$framework-class-prefix}-invert {
+      color: map-get($main-colors, $color);
+      background-color: $black;
+      padding: 0.25rem 0.5rem;
+
+      a {
+
+        &::before {
+          background-color: map-get($main-colors, $color);
+        }
+
+        &:hover {
+          color: $black;
         }
       }
     }

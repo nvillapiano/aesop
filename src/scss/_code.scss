@@ -3,13 +3,14 @@
 code {
   display: block;
   background-color: $black;
-  padding: 1rem;
   margin-bottom: 1rem;
 
   pre {
     font-family: $font-stack-mono;
+    font-weight: $regular;
     background-color: $black;
     margin: 0;
+    padding: 1rem 2rem;
   }
 }
 

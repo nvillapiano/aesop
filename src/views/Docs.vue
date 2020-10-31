@@ -2,13 +2,18 @@
   <div class="wrapper">
     <!-- <Sidenav /> -->
     <main class="main-content">
+      <hr class="ae-mar-0">
+      <hr class="ae-mar-0">
+      <hr class="ae-mar-0">
+      <hr class="ae-mar-0">
       <Doc
         title="Typography"
         description='
           The Aēsop official website uses the font <a href="https://www.swisstypefaces.com/fonts/suisse/">Suisse</a>.
           Aēsop CSS uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
           The six heading classes are provided along with a general body font.
-          Also included is the utility class <span class="ae-code-inline">ae-invert</span>, a class that adds a black background and pseudo-knockout text.
+          Also included is the utility class <span class="ae-code-inline">ae-invert</span>, a class that adds a black background and pseudo-knockout text,
+          and <span class="ae-code-inline">ae-code-inline</span>, a class for displaying pieces of code inline.
         '
         color="orange"
         example='
@@ -69,14 +74,15 @@
   placeat consequuntur explicabo culpa cupiditate laborum vero sint deleniti
   esse iure adipisci aut atque perspiciatis sequi tempora facere cumque vitae!
 </p>
-<p class="ae-invert" style="max-width: 800px;">
+<p class="ae-invert ae-mar-b-2" style="max-width: 800px;">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti,
   placeat consequuntur explicabo culpa cupiditate laborum vero sint deleniti
   esse iure adipisci aut atque perspiciatis sequi tempora facere cumque vitae!
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti,
   placeat consequuntur explicabo culpa cupiditate laborum vero sint deleniti
   esse iure adipisci aut atque perspiciatis sequi tempora facere cumque vitae!
-</p>'
+</p>
+<span class="ae-code-inline">ae-code-inline</span>'
         code='
 <!-- Styles applied to HTML -->
 <h1>
@@ -135,10 +141,147 @@
   <a href="#" class="ae-button ae-secondary">Secondary</a>
 </div>
 
-<!-- Classes can be used to apply button styles to non-button elements -->
+<!-- Buttons tied to inputs receive the input size -->
 <div class="button-with-input">
   <input type="text" placeholder="Input"><button class="ae-button">Button</button>
 </div>'
+      />
+      <Doc
+        title="Inputs"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        color="blue"
+        example='
+<div class="input-styles">
+  <!-- Text -->
+  <input type="text" placeholder="Input">
+
+  <!-- Date -->
+  <input type="date" placeholder="">
+
+  <!-- Time -->
+  <input type="time" placeholder="">
+
+  <!-- Password -->
+  <input type="password" placeholder="">
+
+  <!-- Textarea -->
+  <textarea placeholder="Textarea"></textarea>
+</div>
+
+<!-- Buttons tied to inputs receive the input size -->
+<div class="button-with-input">
+  <input type="text" placeholder="Input"><button class="ae-button">Button</button>
+</div>'
+      />
+      <Doc
+        title="Lists"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        color="pink"
+        example='
+<div class="list-styles">
+
+  <!-- Unordered -->
+  <ul class="ae-list-unordered ae-mar-b-2">
+    <li>
+      List item 1
+    </li>
+    <li>
+      List item 2
+    </li>
+    <li>
+      List item 3
+    </li>
+    <li>
+      List item 4
+    </li>
+  </ul>
+
+  <!-- Ordered -->
+  <ol class="ae-list-ordered ae-mar-b-2">
+    <li>
+      List item 1
+    </li>
+    <li>
+      List item 2
+    </li>
+    <li>
+      List item 3
+    </li>
+    <li>
+      List item 4
+    </li>
+  </ol>
+
+  <!-- Unstyled -->
+  <ul class="ae-list-unstyled ae-mar-b-2">
+    <li>
+      List item 1
+    </li>
+    <li>
+      List item 2
+    </li>
+    <li>
+      List item 3
+    </li>
+    <li>
+      List item 4
+    </li>
+  </ul>
+</div>'
+      />
+      <Doc
+        title="Code blocks"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        color="grey"
+        example='
+  <!-- Code block example -->
+  <code class="ae-code-block">
+    <pre>
+      ...
+    </pre>
+  </code>'
+      />
+      <Doc
+        title="Tables"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        color="orange"
+        example='
+<table class="ae-table">
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+      <th>Column 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1.1</td>
+      <td>Data 2.1</td>
+      <td>Data 3.1</td>
+      <td>Data 4.1</td>
+    </tr>
+    <tr>
+      <td>Data 1.2</td>
+      <td>Data 2.2</td>
+      <td>Data 3.2</td>
+      <td>Data 4.2</td>
+    </tr>
+    <tr>
+      <td>Data 1.3</td>
+      <td>Data 2.3</td>
+      <td>Data 3.3</td>
+      <td>Data 4.3</td>
+    </tr>
+    <tr>
+      <td>Data 1.4</td>
+      <td>Data 2.4</td>
+      <td>Data 3.4</td>
+      <td>Data 4.4</td>
+    </tr>
+  </tbody>
+</table>'
       />
     </main>
 
@@ -159,25 +302,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-  // .doc {
-  //   padding-left: 20vw;
-  //   padding-right: 20vw;
-
-  //   @media only screen and (max-width: 1280px) {
-  //     padding-left: 10vw;
-  //     padding-right: 10vw;
-  //   }
-
-  //   @media only screen and (max-width: 660px) {
-  //     padding-left: 5vw;
-  //     padding-right: 5vw;
-  //   }
-
-  //   .ae-display-inline + .ae-invert {
-  //     white-space: nowrap;
-  //   }
-  // }
 
   .color-blocks,
   .text-blocks {
@@ -204,6 +328,25 @@ export default {
   .button-with-input {
     display: flex;
     align-items: center;
+  }
+
+  .input-styles {
+
+    input {
+      display: block;
+    }
+  }
+
+  section[id*="Code"] {
+
+    .description + hr,
+    .example {
+      display: none;
+    }
+  }
+
+  #Tables {
+    margin-top: -10.3rem;
   }
 
 </style>

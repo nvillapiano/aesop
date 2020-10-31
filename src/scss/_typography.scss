@@ -144,3 +144,10 @@ a:visited {
     }
   }
 }
+
+::selection {
+  color: $white;
+  background: $black;
+  // mix-blend-mode: difference;
+  opacity: 1;
+}

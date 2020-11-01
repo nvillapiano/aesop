@@ -6,6 +6,7 @@
       <hr class="ae-mar-0">
       <hr class="ae-mar-0">
       <hr class="ae-mar-0">
+      <!-- Typography -->
       <Doc
         title="Typography"
         description='
@@ -105,6 +106,7 @@
 </h1>'
 
       />
+      <!-- Color -->
       <Doc
         title="Color"
         description="The colors in Aēsop are based on the colors of the various packages, tubes, jars, etc. used by the Aēsop brand. These colors were grabbed via eyedropper from images of the packages themselves, capturing the tone as accurately as possible. Colors are meant to be used in large blocks, applied to backgrounds only, using the invert class for needed contrast."
@@ -124,6 +126,7 @@
 </div>'
 
       />
+      <!-- Buttons -->
       <Doc
         title="Buttons"
         description="Buttons in Aēsop CSS are meant to be simple and minimalistic, with only two variations: Standard and Secondary. There are no size options tied to buttons, but buttons tied to inputs will shrink to match the size of the input."
@@ -146,9 +149,9 @@
   <input type="text" placeholder="Input"><button class="ae-button">Button</button>
 </div>'
       />
+      <!-- Inputs -->
       <Doc
         title="Inputs"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
         color="blue"
         example='
 <div class="input-styles">
@@ -173,9 +176,9 @@
   <input type="text" placeholder="Input"><button class="ae-button">Button</button>
 </div>'
       />
+      <!-- Lists -->
       <Doc
         title="Lists"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
         color="pink"
         example='
 <div class="list-styles">
@@ -229,9 +232,9 @@
   </ul>
 </div>'
       />
+      <!-- Code blocks -->
       <Doc
         title="Code blocks"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
         color="grey"
         example='
   <!-- Code block example -->
@@ -241,9 +244,9 @@
     </pre>
   </code>'
       />
+      <!-- Tables -->
       <Doc
         title="Tables"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
         color="orange"
         example='
 <table class="ae-table">
@@ -282,6 +285,36 @@
     </tr>
   </tbody>
 </table>'
+      />
+      <!-- Checkboxes -->
+      <Doc
+        title="Checkboxes"
+        color="green"
+        example='
+<form class="ae-checkbox-container">
+  <input type="checkbox" id="ae_checkbox_example_1" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_1">Option 1</label>
+  <input type="checkbox" id="ae_checkbox_example_2" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_2">Option 1</label>
+  <input type="checkbox" id="ae_checkbox_example_3" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_3">Option 1</label>
+</form>
+'
+      />
+      <!-- Radio buttons -->
+      <Doc
+        title="Radio buttons"
+        color="tan"
+        example='
+<form class="ae-radio-container" role="group">
+  <input type="radio" id="ae_radio_example_1" class="ae-radio" value="option1" name="ae-radio-example" />
+  <label for="ae_radio_example_1">Option 1</label>
+  <input type="radio" id="ae_radio_example_2" class="ae-radio" value="option1" name="ae-radio-example" />
+  <label for="ae_radio_example_2">Option 1</label>
+  <input type="radio" id="ae_radio_example_3" class="ae-radio" value="option1" name="ae-radio-example" />
+  <label for="ae_radio_example_3">Option 1</label>
+</form>
+'
       />
     </main>
 
@@ -340,13 +373,10 @@ export default {
   section[id*="Code"] {
 
     .description + hr,
-    .example {
+    .example,
+    .example + hr {
       display: none;
     }
-  }
-
-  #Tables {
-    margin-top: -10.3rem;
   }
 
 </style>

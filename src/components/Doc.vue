@@ -2,7 +2,7 @@
 
   <section class="doc" :id="title" :class="`ae-bg-${color}`">
     <h1 class="title ae-mar-t-5 ae-mar-b-2">{{title}}</h1>
-    <h2 class="description ae-heading-5 ae-invert ae-pad-1 ae-pad-r-4 ae-mar-b-1" v-html="description"></h2>
+    <h2 v-if="description" class="description ae-heading-5 ae-invert ae-pad-1 ae-pad-r-4 ae-mar-b-1" v-html="description"></h2>
     <hr class="ae-mar-t-b-5">
     <div v-html="example" class="example"></div>
     <hr class="ae-mar-t-b-5">
@@ -40,13 +40,7 @@ export default {
 
   .doc {
     padding: 0 2rem 0;
-    min-height: 100vh;
     overflow: hidden;
-
-    .description {
-      // max-width: 800px;
-      // width: 100%;
-    }
 
     code {
       padding-top: 0;

@@ -19,7 +19,7 @@
 }
 
 .#{$framework-class-prefix}-input,
-input {
+input:not([type="checkbox"]) {
   @extend %inputStyle;
 
   & + .#{$framework-class-prefix}-button,

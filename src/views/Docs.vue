@@ -309,10 +309,10 @@
 <form class="ae-radio-container" role="group">
   <input type="radio" id="ae_radio_example_1" class="ae-radio" value="option1" name="ae-radio-example" />
   <label for="ae_radio_example_1">Option 1</label>
-  <input type="radio" id="ae_radio_example_2" class="ae-radio" value="option1" name="ae-radio-example" />
-  <label for="ae_radio_example_2">Option 1</label>
-  <input type="radio" id="ae_radio_example_3" class="ae-radio" value="option1" name="ae-radio-example" />
-  <label for="ae_radio_example_3">Option 1</label>
+  <input type="radio" id="ae_radio_example_2" class="ae-radio" value="option2" name="ae-radio-example" />
+  <label for="ae_radio_example_2">Option 2</label>
+  <input type="radio" id="ae_radio_example_3" class="ae-radio" value="option3" name="ae-radio-example" />
+  <label for="ae_radio_example_3">Option 3</label>
 </form>
 '
       />

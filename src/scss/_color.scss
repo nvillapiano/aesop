@@ -71,6 +71,11 @@ $main-colors: (
       }
     }
 
+    .#{$framework-class-prefix}-cite,
+    cite {
+      color: map-get($main-colors, $color);
+    }
+
     .#{$framework-class-prefix}-invert {
       color: map-get($main-colors, $color);
       background-color: $black;

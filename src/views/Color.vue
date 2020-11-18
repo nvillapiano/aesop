@@ -138,25 +138,6 @@ export default {
 
 <style lang="scss">
 
-  // .doc {
-  //   padding-left: 20vw;
-  //   padding-right: 20vw;
-
-  //   @media only screen and (max-width: 1280px) {
-  //     padding-left: 10vw;
-  //     padding-right: 10vw;
-  //   }
-
-  //   @media only screen and (max-width: 660px) {
-  //     padding-left: 5vw;
-  //     padding-right: 5vw;
-  //   }
-
-  //   .ae-display-inline + .ae-invert {
-  //     white-space: nowrap;
-  //   }
-  // }
-
   .color-blocks,
   .text-blocks {
     display: flex;

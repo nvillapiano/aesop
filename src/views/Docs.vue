@@ -316,6 +316,35 @@
 </form>
 '
       />
+      <!-- Block quotes -->
+      <Doc
+        title="Block quotes"
+        color="grey"
+        example='
+<blockquote class="ae-blockquote">
+  <q class="ae-quote">
+    Decay is inherent upon all compounded things; strive on with diligence.
+  </q>
+  <cite class="ae-cite">Siddhartha Gautama</cite>
+</blockquote>
+'
+      />
+      <Doc
+        title="Select menus"
+        color="orange"
+        example='
+<div class="ae-input-container">
+  <label for="select-menu-example" class="ae-input-label">Select one:</label>
+  <div class="ae-select">
+    <select id="select-menu-example" required>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</div>
+        '
+      />
     </main>
 
   </div>

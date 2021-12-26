@@ -10,11 +10,13 @@
   padding: 0.25rem 0.5rem;
   display: inline-flex;
   align-items: center;
-  height: 35px;
+  height: 2.25rem;
+  font-weight: 600;
 
   &::placeholder {
     color: $black;
     font-weight: $regular;
+    font-weight: inherit;
   }
 }
 
@@ -24,8 +26,8 @@ input:not([type="checkbox"]) {
 
   & + .#{$framework-class-prefix}-button,
   & + button {
-    font-size: 16px;
-    height: 35px;
+    font-size: 1rem;
+    height: 2.25rem;
     margin-left: 0.25rem;
   }
 }
@@ -33,5 +35,5 @@ input:not([type="checkbox"]) {
 .#{$framework-class-prefix}-textarea,
 textarea {
   @extend %inputStyle;
-  min-height: 100px;
+  min-height: 6rem;
 }

@@ -6,7 +6,7 @@
         title="Typography"
         description='
           The Aēsop official website uses the font <a href="https://www.swisstypefaces.com/fonts/suisse/">Suisse</a>.
-          Aēsop CSS uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
+          Aēsop UI uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
           The six heading classes are provided along with a general body font.
           Also included is the utility class <a href="#">ae-invert</a>, a class that adds a black background and pseudo-knockout text.
         '

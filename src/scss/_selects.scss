@@ -1,49 +1,11 @@
-// block quotes
+// select menus
 
-.#{$framework-class-prefix}-blockquote,
-blockquote {
-  @extend %typeHeading3;
-  color: $black;
-  font-family: $font-stack;
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: -1px;
-  padding: 1rem 0 0;
-  max-width: 40rem;
-  width: 90vw;
-  margin: 0 auto;
+.#{$framework-class-prefix}-select,
+select {
+  @extend %globalTypeStyle;
   border: 3px solid $black;
-  position: relative;
-
-
-  .#{$framework-class-prefix}-quote,
-  q {
-    display: block;
-    margin: 0;
-    padding: 0 1rem;
-
-    &::before,
-    &::after {
-      content: '';
-    }
-  }
-
-  .#{$framework-class-prefix}-cite,
-  cite {
-    display: block;
-    margin: 0;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: right;
-    margin-top: 1rem;
-    background: $black;
-    padding: 0.9rem 1rem 0.5rem;
-    line-height: 1;
-  }
-
-  @media only screen and (max-width: 660px) {
-    font-size: 20px;
-    padding: 3rem;
-  }
+  display: flex;
+  background: $black;
+  color: $white;
+  padding: 0.25rem;
 }

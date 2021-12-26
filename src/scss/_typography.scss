@@ -95,10 +95,10 @@ a:visited {
   &::before {
     content: "";
     position: absolute;
-    top: 2%;
-    left: -2%;
+    top: -.3ch;
+    left: -0.25ch;
     width: 0;
-    height: 102%;
+    height: calc(100% + 0.5ch);
     background-color: $black;
     z-index: -1;
     pointer-events: none;
@@ -108,7 +108,7 @@ a:visited {
   &:hover:not(.ae-button) {
 
     &::before {
-      width: 104%;
+      width: calc(100% + 0.5ch);
     }
   }
 
@@ -149,6 +149,5 @@ a:visited {
 ::selection {
   color: $white;
   background: $black;
-  // mix-blend-mode: difference;
   opacity: 1;
 }

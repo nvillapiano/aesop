@@ -11,7 +11,7 @@
         title="Typography"
         description='
           The Aēsop official website uses the font <a href="https://www.swisstypefaces.com/fonts/suisse/">Suisse</a>.
-          Aēsop CSS uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
+          Aēsop UI uses a close analog, <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>.
           The six heading classes are provided along with a general body font.
           Also included is the utility class <span class="ae-code-inline">ae-invert</span>, a class that adds a black background and pseudo-knockout text,
           and <span class="ae-code-inline">ae-code-inline</span>, a class for displaying pieces of code inline.
@@ -129,7 +129,7 @@
       <!-- Buttons -->
       <Doc
         title="Buttons"
-        description="Buttons in Aēsop CSS are meant to be simple and minimalistic, with only two variations: Standard and Secondary. There are no size options tied to buttons, but buttons tied to inputs will shrink to match the size of the input."
+        description="Buttons in Aēsop UI are meant to be simple and minimalistic, with only two variations: Standard and Secondary. There are no size options tied to buttons, but buttons tied to inputs will shrink to match the size of the input."
         color="tan"
         example='
 <!-- Button styles -->
@@ -329,20 +329,19 @@
 </blockquote>
 '
       />
+      <!-- Select menus -->
       <Doc
         title="Select menus"
         color="orange"
         example='
-<div class="ae-input-container">
-  <label for="select-menu-example" class="ae-input-label">Select one:</label>
-  <div class="ae-select">
-    <select id="select-menu-example" required>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-  </div>
-</div>
+<form>
+  <label for="select-menu-example" class="ae-label">Select one:</label>
+  <select class="ae-select" id="select-menu-example" required>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</form>
         '
       />
     </main>

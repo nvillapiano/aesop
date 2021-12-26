@@ -79,7 +79,7 @@ $main-colors: (
     .#{$framework-class-prefix}-invert {
       color: map-get($main-colors, $color);
       background-color: $black;
-      padding: 0.25rem 0.5rem;
+      padding: 0.5rem 0.5rem 0.25rem;
 
       a {
 

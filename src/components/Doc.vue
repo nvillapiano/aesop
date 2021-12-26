@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'Sidenav',
+  name: 'Doc',
   props: {
     title: String,
     description: String,

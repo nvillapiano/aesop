@@ -12,6 +12,10 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-unused-vars': 'warn',
+    'quote-props': 'warn',
+    'quotes': 'off',
+    'vue/require-v-for-key': 'warn',
   }
 }

@@ -8,6 +8,18 @@ $tan: #d6af7a;
 $black: #100a00;
 $white: #e7eade;
 
+// vars
+:root {
+  --#{$framework-class-prefix}-orange: $orange;
+  --#{$framework-class-prefix}-blue: $blue;
+  --#{$framework-class-prefix}-pink: $pink;
+  --#{$framework-class-prefix}-green: $green;
+  --#{$framework-class-prefix}-grey: $grey;
+  --#{$framework-class-prefix}-tan: $tan;
+  --#{$framework-class-prefix}-black: $black;
+  --#{$framework-class-prefix}-white: $white;
+}
+
 $main-colors: (
   orange: $orange,
   blue: $blue,

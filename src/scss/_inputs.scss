@@ -20,11 +20,11 @@
   }
 }
 
-.#{$framework-class-prefix}-input,
+.ae-input,
 input:not([type="checkbox"]) {
   @extend %inputStyle;
 
-  & + .#{$framework-class-prefix}-button,
+  & + .ae-button,
   & + button {
     font-size: 1rem;
     height: 2.25rem;
@@ -32,7 +32,7 @@ input:not([type="checkbox"]) {
   }
 }
 
-.#{$framework-class-prefix}-textarea,
+.ae-textarea,
 textarea {
   @extend %inputStyle;
   min-height: 6rem;

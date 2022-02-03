@@ -5,6 +5,11 @@
 <style lang="scss">
   @import "./scss/index.scss";
 
+  #app {
+    overflow: hidden;
+    overflow-y: initial;
+  }
+
   .wrapper {
     display: flex;
 

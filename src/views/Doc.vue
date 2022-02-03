@@ -7,13 +7,13 @@
       <hr class="ae-mar-0">
       <hr class="ae-mar-0">
       <!-- Loop through component data to populate docs -->
-      <Doc v-for="component in componentData" :key="component.title"
-        :title="component.title"
-        :id="component.title.toLowerCase().split(' ').join('_')"
-        :description="component.description"
-        :color="component.color"
-        :example="component.example"
-        :code="component.code"
+      <Doc
+        :title="componentData.title"
+        :id="componentData.title.toLowerCase().split(' ').join('_')"
+        :description="componentData.description"
+        :color="componentData.color"
+        :example="componentData.example"
+        :code="componentData.code"
       />
     </main>
 

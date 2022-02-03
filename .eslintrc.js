@@ -17,5 +17,6 @@ module.exports = {
     'quote-props': 'warn',
     'quotes': 'off',
     'vue/require-v-for-key': 'warn',
+    'space-before-function-paren': 'off'
   }
 }

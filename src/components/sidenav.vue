@@ -2,29 +2,9 @@
 
   <nav class="side-nav ae-bg-black">
     <ul class="ae-list-unstyled">
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Typography</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Color</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Colors</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Buttons</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Inputs</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Lists</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Code blocks</a>
-      </li>
-      <li class="ae-heading-4">
-        <a class="ae-link-unstyled" href="#">Tables</a>
+      <li class="ae-heading-4" v-for="component in componentData" :key="component.title">
+        <!-- <router-link class="ae-link-unstyled" :to="'#' + `${component.title.toLowerCase().split(' ').join('_')}`">{{component.title}}</router-link> -->
+        <router-link class="ae-link-unstyled" :to="{path: component.title}">{{component.title}}</router-link>
       </li>
     </ul>
   </nav>
@@ -32,8 +12,21 @@
 </template>
 
 <script>
+import { componentData } from '../components/component-docs'
+
 export default {
-  name: 'Sidenav'
+  name: 'Sidenav',
+  data () {
+    return {
+      componentData: componentData
+    }
+  },
+  mounted() {
+    const el = document.querySelector(this.$route.hash)
+    el && el.scrollIntoView()
+
+    console.log(el)
+  }
 }
 </script>
 

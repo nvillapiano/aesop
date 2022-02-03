@@ -1,6 +1,6 @@
 <template>
 
-  <section class="doc" :id="title" :class="`ae-bg-${color}`">
+  <section class="doc" :class="`ae-bg-${color}`">
     <h1 class="title ae-mar-t-5 ae-mar-b-2">{{title}}</h1>
     <h2 v-if="description" class="description ae-heading-5 ae-invert ae-pad-1 ae-pad-r-4 ae-mar-b-1" v-html="description"></h2>
     <hr class="ae-mar-t-b-5">

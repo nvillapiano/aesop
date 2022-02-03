@@ -1,11 +1,11 @@
 // radio
-.#{$framework-class-prefix}-radio-container{
+.ae-radio-container{
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.#{$framework-class-prefix}-radio,
+.ae-radio,
 input[type="radio"] {
   appearance: none;
   width: 1rem;

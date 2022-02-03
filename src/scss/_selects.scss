@@ -1,6 +1,6 @@
 // select menus
 
-.#{$framework-class-prefix}-select,
+.ae-select,
 select {
   @extend %globalTypeStyle;
   border: 3px solid $black;

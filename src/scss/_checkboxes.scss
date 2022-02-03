@@ -1,11 +1,11 @@
 // code
-.#{$framework-class-prefix}-checkbox-container{
+.ae-checkbox-container{
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.#{$framework-class-prefix}-checkbox,
+.ae-checkbox,
 input[type="checkbox"] {
   appearance: none;
   width: 1rem;

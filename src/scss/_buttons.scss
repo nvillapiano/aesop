@@ -10,7 +10,7 @@
 //   black: $black
 // );
 
-.#{$framework-class-prefix}-button,
+.ae-button,
 button {
   @extend %typeBody;
   font-size: 20px;
@@ -29,7 +29,7 @@ button {
     background: $black;
   }
 
-  &.#{$framework-class-prefix}-secondary {
+  &.ae-secondary {
     background: none;
     border-color: transparent;
 

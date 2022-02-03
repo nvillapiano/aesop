@@ -1,8 +1,8 @@
 // lists
 
-.#{$framework-class-prefix}-list-ordered,
-.#{$framework-class-prefix}-list-unordered,
-.#{$framework-class-prefix}-list-unstyled,
+.ae-list-ordered,
+.ae-list-unordered,
+.ae-list-unstyled,
 ul,
 ol {
   margin: 0 0 0 1rem;
@@ -15,7 +15,7 @@ li {
   margin: 0 0 1rem;
 }
 
-.#{$framework-class-prefix}-ordered,
+.ae-ordered,
 ol {
   margin-left: 0.75rem;
   list-style: none;
@@ -41,7 +41,7 @@ ol {
   }
 }
 
-.#{$framework-class-prefix}-list-unstyled {
+.ae-list-unstyled {
   padding: 0;
 
   li {

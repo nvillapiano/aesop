@@ -1,6 +1,6 @@
 // block quotes
 
-.#{$framework-class-prefix}-blockquote,
+.ae-blockquote,
 blockquote {
   @extend %typeHeading3;
   color: $black;
@@ -16,7 +16,7 @@ blockquote {
   position: relative;
 
 
-  .#{$framework-class-prefix}-quote,
+  .ae-quote,
   q {
     display: block;
     margin: 0;
@@ -28,7 +28,7 @@ blockquote {
     }
   }
 
-  .#{$framework-class-prefix}-cite,
+  .ae-cite,
   cite {
     display: block;
     margin: 0;

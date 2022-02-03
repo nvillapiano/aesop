@@ -2,76 +2,76 @@
 
 // spacing
 @for $interval from 0 to 11 {
-  .#{$framework-class-prefix}-mar-#{$interval} {
+  .ae-mar-#{$interval} {
     margin: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-t-#{$interval} {
+  .ae-mar-t-#{$interval} {
     margin-top: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-r-#{$interval} {
+  .ae-mar-r-#{$interval} {
     margin-right: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-b-#{$interval} {
+  .ae-mar-b-#{$interval} {
     margin-bottom: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-l-#{$interval} {
+  .ae-mar-l-#{$interval} {
     margin-left: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-t-b-#{$interval} {
+  .ae-mar-t-b-#{$interval} {
     margin-top: $interval * 1rem !important;
     margin-bottom: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-mar-l-r-#{$interval} {
+  .ae-mar-l-r-#{$interval} {
     margin-left: $interval * 1rem !important;
     margin-right: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-#{$interval} {
+  .ae-pad-#{$interval} {
     padding: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-t-#{$interval} {
+  .ae-pad-t-#{$interval} {
     padding-top: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-r-#{$interval} {
+  .ae-pad-r-#{$interval} {
     padding-right: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-b-#{$interval} {
+  .ae-pad-b-#{$interval} {
     padding-bottom: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-l-#{$interval} {
+  .ae-pad-l-#{$interval} {
     padding-left: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-t-b-#{$interval} {
+  .ae-pad-t-b-#{$interval} {
     padding-top: $interval * 1rem !important;
     padding-bottom: $interval * 1rem !important;
   }
 
-  .#{$framework-class-prefix}-pad-l-r-#{$interval} {
+  .ae-pad-l-r-#{$interval} {
     padding-left: $interval * 1rem !important;
     padding-right: $interval * 1rem !important;
   }
 }
 
-.#{$framework-class-prefix}-mar-l-auto {
+.ae-mar-l-auto {
   margin-left: auto !important;
 }
 
-.#{$framework-class-prefix}-mar-r-auto {
+.ae-mar-r-auto {
   margin-right: auto !important;
 }
 
-.#{$framework-class-prefix}-mar-l-r-auto {
+.ae-mar-l-r-auto {
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -90,7 +90,7 @@ $display-types: (
 );
 
 @each $display in map-keys($display-types) {
-  .#{$framework-class-prefix}-display-#{$display} {
+  .ae-display-#{$display} {
     display: map-get($display-types, $display);
   }
 }
@@ -98,7 +98,7 @@ $display-types: (
 
 // hr
 
-.#{$framework-class-prefix}-hr,
+.ae-hr,
 hr {
   display: block;
   margin: 2rem 0;

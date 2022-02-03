@@ -284,5 +284,65 @@ export const componentData = [
   </tbody>
 </table>`,
     code: ``
+  },
+  {
+    title: 'Checkboxes',
+    description: ``,
+    color: 'green',
+    example: `
+<form class="ae-checkbox-container">
+  <input type="checkbox" id="ae_checkbox_example_1" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_1">Option 1</label>
+  <input type="checkbox" id="ae_checkbox_example_2" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_2">Option 1</label>
+  <input type="checkbox" id="ae_checkbox_example_3" class="ae-checkbox" value="option1" />
+  <label for="ae_checkbox_example_3">Option 1</label>
+</form>`,
+    code: ``
+  },
+  {
+    title: 'Radio buttons',
+    description: ``,
+    color: 'tan',
+    example: `
+<form class="ae-radio-container" role="group">
+  <input type="radio" id="ae_radio_example_1" class="ae-radio" value="option1" name="ae-radio-example" />
+  <label for="ae_radio_example_1">Option 1</label>
+  <input type="radio" id="ae_radio_example_2" class="ae-radio" value="option2" name="ae-radio-example" />
+  <label for="ae_radio_example_2">Option 2</label>
+  <input type="radio" id="ae_radio_example_3" class="ae-radio" value="option3" name="ae-radio-example" />
+  <label for="ae_radio_example_3">Option 3</label>
+</form>`,
+    code: ``
+  },
+  {
+    title: 'Block quotes',
+    description: ``,
+    color: 'grey',
+    example: ``,
+    code: `
+<blockquote class="ae-blockquote">
+  <q class="ae-quote">
+    Decay is inherent upon all compounded things; strive on with diligence.
+  </q>
+  <cite class="ae-cite">Siddhartha Gautama</cite>
+</blockquote>
+    `
+  },
+  {
+    title: 'Select menus',
+    description: ``,
+    color: 'orange',
+    example: `
+<form>
+  <label for="select-menu-example" class="ae-label">Select one:</label>
+  <select class="ae-select" id="select-menu-example" required>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</form>
+    `,
+    code: ``
   }
 ]

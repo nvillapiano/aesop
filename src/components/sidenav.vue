@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { componentData } from '../components/component-docs'
+import { componentData } from './component-docs'
 
 export default {
   name: 'Sidenav',

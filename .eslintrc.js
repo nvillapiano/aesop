@@ -8,7 +8,7 @@ module.exports = {
     '@vue/standard'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    // parser: 'babel-eslint'
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -17,6 +17,8 @@ module.exports = {
     'quote-props': 'warn',
     'quotes': 'off',
     'vue/require-v-for-key': 'warn',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    'vue/multi-word-component-names': 'off'
+
   }
 }
